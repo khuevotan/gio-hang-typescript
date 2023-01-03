@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="../lib/bootstrap4.css">
+    <link rel="stylesheet" href="../lib/1.css">
+
+    <!-- dung jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!-- load icon -->
+    <script src="../fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/js/all.min.js"></script>
+    
+    <!-- load typescript -->
+    <!-- <script src="js/sanpham.js"></script> -->
+ 
+    <script src="../node_modules/systemjs/dist/system.min.js"></script>
+    <script>
+        System.import('../dist/app.js');
+    </script>
+
+</head>
+<body>
+    <div class="menutren">
+        <div class="container-fluid">
+        </div>
+    </div>
+
+    <div class="container" id="noidung">
+        <!-- thông báo -->
+        <div class="row thongbao">
+            <div class="col-sm-12">
+                <div class="alert alert-success" role="alert">
+                    <i class="fa-regular fa-square-check"></i><strong> Sản phẩm </strong>
+                    đã được thêm vao giỏ hàng!
+                </div>
+            </div>
+        </div>
+
+        <!-- tiêu đề -->
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 class="tdto">GIỎ HÀNG <small></small> </h3>
+            </div>
+        </div>
+
+        <!-- nội dung chính -->
+        <div class="row">
+
+            <!-- cột bên trái -->
+            <div class="col-sm-8" id="dssanpham">
+                <div class="card" id="cacsptronggio">   
+                </div>
+
+                <div class="row sanphamkhac">
+                    <div class="col-sm-12">
+                        <h3 class="display">
+                            <h3 class="tdto">Sản phẩm khác</h3>
+                        </h3>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="row" id="cacspdemua">
+                            <!-- <div class="col-sm-4"> -->
+                                <!-- hien thi san pham vao day -->
+
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Hết cột trái -->
+
+
+            
+            <!-- cột bên phải -->
+            <div class="col-sm-4" id="tinhgia">
+                <div class="divtrang card card-body">
+                    <div class="dongtinhgia">
+                        <div class="phai float-right" id="giatamtinh"></div>
+                        <div class="trai">Tạm tính: </div>
+                        
+                    </div>
+                    <div class="thanhtien">
+                        <div class="phai float-right">
+                            <div class="doto">
+                            
+                            </div> 
+                            <div class="gom">
+                                (Đã bao gồm VAT)
+                            </div>
+                        </div>
+                        <div class="trai">Thành tiền: </div>
+                    </div>
+                    <a href="" class="btn btn-danger btn-block">
+                        Tiến hành đặt hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a.btn.btn-danger.btn-block {
+    margin-top: 20px;
+}
+
+.doto {font-size: 30px;color: red;}
+
+.dongtinhgia {
+    padding: 10px 0px 20px 0px;
+    border-bottom: 1px solid;
+    margin: 10;
+}
+
+input.form-group {
+    width: 120%;
+    padding: 0px 0px 0px 5px;
+}
+
+.menutren {
+    min-height: 200px;
+    background:url(../images/menu.png) no-repeat center;
+}
